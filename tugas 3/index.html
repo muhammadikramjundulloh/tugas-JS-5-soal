@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+<fieldset> 
+  <legend>Kurs Mata Uang</legend>
+  <div>
+   <table>
+     <tr>
+       <th>Masukan Nilai</th>
+       <th>Valas</th>
+       <th>Nilai Rupiah</th>
+     </tr>
+     <tr>
+      <td><input type="number" class="input" id="masukan1"></td>
+      <td>
+   <select name="" class="pilih" >
+     <option value="usd" id="">Dolar Us</option>
+      <option value="ryl" id="">Riyal</option>
+      <option value="rgt" id>Ringgit</option>
+      <option value="yen" id="">Yen</option>
+      <option value="sgd">Dolar Singapura</option>
+   </select>
+      </td>
+      <td class="hasil"></td>
+
+     </tr>
+
+   </table>
+   </div></fieldset>
+
+  
+    <script>
+      function getHasil (){
+
+}
+
+let input = document.querySelector(".input");
+let pilihSelect =document.querySelector(".pilih");
+let hasil = document.querySelector(".hasil")
+
+pilihSelect.addEventListener("click", function() {
+ 
+  if (pilihSelect.value == "usd"){
+    hasil.innerHTML ="Rp. "+ input.value * 13472;
+  }
+  else if (pilihSelect.value == "ryl"){
+    hasil.innerHTML ="Rp. "+ input.value * 3592;
+  }
+  else if (pilihSelect.value == "yen"){
+    hasil.innerHTML ="Rp. "+ input.value * 120;
+  }
+  else if (pilihSelect.value == "rgt"){
+    hasil.innerHTML ="Rp. "+ input.value * 874;
+  }
+  else if (pilihSelect.value == "sgd"){
+    hasil.innerHTML ="Rp. "+ input.value * 9915;
+  }
+})
+    </script>
+  </body>
+</html>

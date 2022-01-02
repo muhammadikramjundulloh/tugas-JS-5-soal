@@ -1,0 +1,70 @@
+body{
+  height: 10000px;
+}
+.chatwindow{
+  width: 250px;
+  height: 400px;
+  border: solid 1px black;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  background: grey;
+  display: none;
+}
+
+.tabchat{
+   position: fixed;
+  bottom: 2px;
+  right: 16px;
+  width: 70px;
+  height: 40px;
+  
+}
+
+
+#cw-head{
+  width: 250px;
+  height: 40px;
+  margin-top: 0;
+ padding: auto;
+}
+
+.cw-mid{
+  width: 250px;
+  height: 310px;
+}
+
+#inp{
+  width: 180px;
+  height: 30px;
+}
+
+.cw-send{
+  width: 50px;
+  height: 40px;
+  margin-bottom:0px 
+}
+
+.cw-send p{
+  text-align: center;
+}
+.cht{
+  height: 90%;
+}
+.barischat{
+  width: 100%;
+  height: 10%;
+  margin-bottom: 5px;
+}
+
+.balonchat{
+  width: auto;
+  max-width: 45%;
+  background-color: white;
+  border: 0.7px solid black;
+  padding: 0.3em 0.6em 0.3em 0.6em ;
+  border-radius: 0.7em;
+  word-wrap: break-word;
+  text-align: left;
+}
